@@ -1,94 +1,638 @@
 <!doctype html>
 <html>
 
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<title>Koha Open Source ILS</title>
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/sky.css">
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement('link');
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName('head')[0].appendChild(link);
-		</script>
-		<style>
-			h1, h2, h3, h4, h5 {text-transform: none !important;}
-			p  {font-size: 110%;}
-			.img-container {float: left; width: 50%; padding: 5px;}
-		</style>
-	</head>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>With a little bit of luck</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/sky.css">
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+	<style>
+		h1,
+		h2,
+		h3,
+		h4,
+		h5 {
+			text-transform: none !important;
+		}
 
-	<body>
-		<div class="reveal">
-			<div class="topbar">
-				<span class="nextlogo">
-					<image class="logo" src="images/0010.png" width="250" style="padding: 25px 25px 25px 25px; position: absolute; top: 0; right: 0;">
-				</span>
-				<div class="slides">
+		p {
+			font-size: 110%;
+		}
 
-					<section id="slide">
-						<h2>Heading 2</h2>
-						<p>Paragraph</p>
-						<h3>Heading 3</h3>
-						<aside class="notes">Speaker notes</aside>
-					</section>
+		.img-container {
+			float: left;
+			width: 50%;
+			padding: 5px;
+		}
+	</style>
+</head>
 
-					<section id="slide-success">
-						<h2>Heading 2</h2>
-						<h3 class="fragment" data-fragment-index="1">First</h3>
-						<h3 class="fragment" data-fragment-index="2">Second</h3>
-						<h3 class="fragment" data-fragment-index="3">Third</h3>
-						<h3 class="fragment" data-fragment-index="4">Fourth</h3>
-						<h3 class="fragment" data-fragment-index="5">Fith</h3>
-						<aside class="notes">Speaker notes</aside>
-					</section>
+<body>
+	<div class="reveal">
+		<div class="topbar">
+			<span class="nextlogo">
+				<image class="logo" src="images/0010.png" width="250" style="padding: 25px 25px 25px 25px; position: absolute; top: 0; right: 0;">
+			</span>
+			<div class="slides">
 
-					<section id="slide-kohatime1">
-						<h2>Heading 2</h2>
-						<ul>
-							<li class="fragment fade-in-then-semi-out">First</li>
-							<li class="fragment fade-in-then-semi-out">Second</li>
-							<li class="fragment fade-in-then-semi-out">Third</li>
-							<li class="fragment fade-in-then-semi-out">Fourth</li>
-							<li class="fragment fade-in-then-semi-out">Fifth</li>
-						</ul>
-						<aside class="notes">Speaker notes</aside>
-					</section>
+				<section id="title">
+					<h2>Luck isn't enough:<br />The work librarians can do to make Koha better</h2>
+					<h3>AKA - George says something weird</h3>
+					<p>George Williams</p>
+					<aside class="notes">Title Slide</aside>
+				</section>
 
-				</div>
-			</div>
-			<div>
-				<span class="nextlogo">
-					<image class="logo" src="images/0020.png" width="250" style="padding: 25px 25px 25px 25px; position: absolute; bottom: 0; left: 0;">
-				</span>
+				<section id="me">
+					<h2>George Williams</h2>
+					<p><a href="https://nextkansas.org" target="_blank">Next Search Catalog Coordinator</a></p>
+					<p><a href="https://www.nekls.org" target="_blank">Northeast Kansas Library System</a></p>
+					<aside class="notes">Hello my name is George Williams and I'm lucky to have worked with Koha for the past 8 years.</aside>
+				</section>
+
+				<section id="usa">
+					<h2>USA</h2>
+					<img src="./images/usa.jpg" alt="USA" height="325">
+					<p>Kansas is in the middle.</p>
+					<aside class="notes">Tody I'm going to stumble through about 25 minutes of what we're laughably</aside>
+				</section>
+
+				<section id="kansas">
+					<h2>51 Libraries in north east Kansas</h2>
+					<img src="./images/kansas030.jpg" alt="kansas" height="325">
+					<p>NEKLS is the highlighted area.</p>
+					<aside class="notes">calling a "Keynote address" and I'm going to talk about how I started working with Koha</aside>
+				</section>
+
+				<section id="wheel">
+					<h2>Rota fortunae</h2>
+					<img src="./images/wheel.jpg" height="325">
+					<p>The wheel of fortune.</p>
+					<aside class="notes">and how that involved some luck</aside>
+				</section>
+
+				<section id="hardhat">
+					<h2>Hard work</h2>
+					<img src="./images/hardwork.jpg" height="325">
+					<p></p>
+					<aside class="notes">and a lot of hard work. Well, a lot of work</aside>
+				</section>
+
+				<section id="sleep">
+					<h2>Working hard or hardly working</h2>
+					<img src="./images/sleeping1.jpg" height="325">
+					<p>This is what I'm usually doing at this time of day.</p>
+					<aside class="notes">I'm not too sure of how hard I'm working</aside>
+				</section>
+
+				<section id="home">
+					<h2>Working from home</h2>
+					<img src="./images/home.jpg" height="325">
+					<p>Only 336 payments left.</p>
+					<aside class="notes">right now at home in the in the basement</aside>
+				</section>
+
+				<section id="">
+					<h2>Garage is a mess</h2>
+					<img src="./images/garage.jpg" height="325">
+					<p>My office might as well be in a disused lavatory with a sign on the door saying "Beware of the Leopard.""</p>
+					<aside class="notes">in the garage - there's a lot of work here that needs to be done and I don't feel like I'm accomplishing a whole lot and I can't wait to go back to the office so I can do what I normally do</aside>
+				</section>
+
+				<section id="">
+					<h2>Hardly working</h2>
+					<img src="./images/sleeping2.jpg" height="325">
+					<p>I can't wait to get back to the office!</p>
+					<aside class="notes">instead of working from home.<br /><br />In any event, I'm going to talk about luck and about how luck can be important, but it isn't enough. Luck is only a starting point. After luck, comes hard work. Or at least work.  So I'll talk about how I got here and then I'll talk about what work librarians can do to move Koha forward.</aside>
+				</section>
+
+				<section id="">
+					<h2></h2>
+					<table>
+						<tr>
+							<td>
+								<img src="./images/valnet.gif" width="750">
+								<p style="text-align: center;">VALNet</p>
+							</td>
+							<td>
+								<img src="./images/bywater-solutions-logo.png" width="750">
+								<p style="text-align: center;">Circulation Desk<br />ByWater Solutions</p>
+							</td>
+						</tr>
+					</table>
+					<aside class="notes">when I say I've been working with Koha for the past 8 years - I mean that it was literally 8 years ago today when the library I was working at went live with Koha supported by ByWater Solutions.</aside>
+				</section>
+
+				<section id="">
+					<h2></h2>
+					<img src="./images/dnews.jpg" height="325">
+					<p><a href="https://dnews.com/life/making-the-transition-at-the-library/article_27672997-d9eb-5280-a655-c176ee95841e.html" target="_blank">Article I wrote for the local paper.</a></p>
+					<aside class="notes">On April 21 and 22 of 2012 I stayed up till 2:00 a.m. running reports on our old system and copying the output from those reports to a shared folder so that Ruth Bavoset could import that data into Koha.</aside>
+				</section>
+
+				<section id="">
+					<h2>William Shakespeare - Fun fact</h2>
+					<img src="./images/shakespeare.jpg" height="325">
+					<p>Shakespeare was probably born on this date in 1564.<br />He also died on this date in 1616.<br/><a href="https://en.wikipedia.org/wiki/William_Shakespeare" target="_blank">Click here if you don't believe me.</a></p>
+					<aside class="notes">So, for me it's literally been 8 years since I started using Koha every day for doing library work.</aside>
+				</section>
+
+				<section id="">
+					<h2>Idaho is in the upper left</h2>
+					<img src="./images/usa2.jpg" height="325">
+					<p>Idaho.  Jewel of the Pacific Northwest.</p>
+					<aside class="notes">There was luck involved in that situation. From 2006-2016 I was working as the circulation manager for the Latah County Library district in north central Idaho</aside>
+				</section>
+
+				<section id="">
+					<h2>Moscow Public Library Circulation Desk</h2>
+					<img src="./images/circ.010.jpg" height="325">
+					<p>I do not miss the morning book-drop.</p>
+					<aside class="notes">and Latah County Library was a part of the VALNet  consortium which (at the time) was part of an even bigger consortium of libraries called Washington Idaho Network. The main thing that WIN provided for VALNet and CIN was our ILS. An ILS that we din't really like</aside>
+				</section>
+
+				<section id="">
+					<h2>2008-2009</h2>
+					<img src="./images/crash.jpg" height="325">
+					<p></p>
+					<aside class="notes">And, for those of you that don't remember, back in 2009 the housing market crashed. This was, of course, bad luck. And by that, I mean that it was beyond the control of everyday ordinary people like librarians and patrons. We had no control over it, and for most public libraries, it was a budget killer. The effect that this had on Washington Idaho Network was that they decided to modify their funding formula in such a way that public libraries were going to be asked to pay more for the ILS that WIN was providing for its members.</aside>
+				</section>
+
+				<section id="">
+					<h2>Coperative Information Network</h2>
+					<img src="./images/CIN_banner.jpg" height="325">
+					<p>AKA CIN</p>
+					<p>Thats pronounced SEE-EYE-ENN - they don't like it when you call them 'sin.'</p>
+					<aside class="notes">To make a long story short, in 2010, VALNet and CIN - the Cooperative Information Network - decided that the best thing they could do was to leave the Washington Idaho Network and migrate to a new ILS.</aside>
+				</section>
+
+				<section id="">
+					<h2>Rota fortunae</h2>
+					<img src="./images/wheel2.jpeg" height="325">
+					<p>Not a medieval game show.</p>
+					<aside class="notes">Bad luck started this chain of events, but the more important part of what happened next was the work that VALNet and CIN put into finding a new ILS.</aside>
+				</section>
+
+				<section id="">
+					<h2>Spokane, WA</h2>
+					<img src="./images/spokane.jpg" height="325">
+					<p>Jewel of the Pacific Northwest.</p>
+					<aside class="notes">We had an event in Spokane Washington where we invited ILS vendors to come an show off their products in 2010. </aside>
+				</section>
+
+				<section id="">
+					<h2>Days of discovery</h2>
+					<table>
+						<tr>
+							<td><img src="./images/innovative.png" height="100"></td>
+							<td><img src="./images/sirsi.jpg" height="150" width="150"></td>
+							<td><img src="./images/equinox.jpg" height="150" width="150"></td>
+							<td><img src="./images/evergreen.jpg" height="100"></td>
+						</tr>
+					</table>
+					<p>A bunch of salesmen showed up.</p>
+					<aside class="notes">We saw presentations from Innovative, Equinox, Evergreen, and Sirsi-Dynix. Those presentations helped us narrow down the field a little bit </aside>
+				</section>
+
+				<section id="">
+					<h2>Narrowing the field</h2>
+					<table>
+						<tr>
+							<td><img src="./images/sirsi.jpg" height="150" width="150"></td>
+							<td><img src="./images/bywater-solutions-logo.png" width="750"></td>
+						</tr>
+					</table>
+					<p>Only a few salesmen the second time around.  ByWater did their presentation remotely.</p>
+					<aside class="notes">and in the early part of 2011 we did a second set of presentations with ByWater Solutions and with Sirsi-Dynix. And at that time we started working towards migrating to Koha with ByWater Solutions with a spring of 2012 migration in mind.</aside>
+				</section>
+
+				<section id="">
+					<h2>University of Idaho</h2>
+					<img src="./images/uofi.jpg" height="325">
+					<p>Moscow, Idaho.  Jewel of the Pacific Northwest.</p>
+					<aside class="notes">The next bit of luck was that, out of all of the libraries in VALNet, the one I worked for was the only library whose budget went up during the housing market crash. this seems counter-intuitive, but the Latah County Library has its main branch in Moscow, Idaho, which is the home of the University of Idaho.</aside>
+				</section>
+
+				<section id="">
+					<h2>Boise State University</h2>
+					<img src="./images/bsu1.jpg" height="325">
+					<p>I can't bring myself to leave a picture of U of I up too long - I went to Boise State. Really a much better school.</p>
+					<aside class="notes">If you've ever lived in a college town, this is an old story.</aside>
+				</section>
+
+				<section id="">
+					<h2>Yep, BSU is a great school</h2>
+					<img src="./images/bsu2.jpg" height="325">
+					<p>I mean, I did go to graduate school at the U of I, but, let's face it, BSU is just a better school.</p>
+					<aside class="notes">When people lose their jobs, they go back to school.</aside>
+				</section>
+
+				<section id="">
+					<h2>Go Broncos!</h2>
+					<img src="./images/bsu3.jpg" height="325">
+					<p>Nothing more needs to be said. BSU rocks.</p>
+					<aside class="notes">Every other library in the VALNet consortium was cutting budgets and laying off employees but Latah County Library was able to expand its budget in the 2011/2012 fiscal year.</aside>
+				</section>
+
+				<section id="">
+					<h2>Anne Cheadle<br />LCLD Director 2006-2014</h2>
+					<img src="./images/deary.jpg" height="325">
+					<p>Anne never liked having her picture taken, so instead, here is a picture I took of the Deary Library in 2015.</p>
+					<aside class="notes">The VALNet library directors knew that the migration was going to be a lot of work, and my director at the time, Anne Cheadle</aside>
+				</section>
+
+				<section id="">
+					<h2>Bovill Community Library</h2>
+					<img src="./images/bovill.jpg" height="325">
+					<p>2008</p>
+					<aside class="notes">, knew that LCLD had more resources to devote to the migration than anyone else</aside>
+				</section>
+
+				<section id="">
+					<h2>Potlatch Community Library</h2>
+					<img src="./images/potlatch.jpg" height="325">
+					<p>2014</p>
+					<aside class="notes">, so she actually hired an assistant for me and then devoted half of my time from October of 2011 to August of 2012 to work on nothing but the migration and Koha training. And I consider this one of the luckiest things that ever happened to me.</aside>
+				</section>
+
+				<section id="">
+					<h2>Genesee Community Library</h2>
+					<img src="./images/genesee.jpg" height="325">
+					<p>2008</p>
+					<aside class="notes">But, once again, luck was only a starting point.</aside>
+				</section>
+
+				<section id="">
+					<h2>Juliaetta Community Library</h2>
+					<img src="./images/juliaetta.jpg" height="325">
+					<p>2008</p>
+					<aside class="notes">The only part of this that was really lucky was the fact that my boss had the foresight to realize that the more we were willing to put into the migration the more that the Latah County Library would get out of it.</aside>
+				</section>
+
+				<section id="">
+					<h2>Troy Community Library</h2>
+					<img src="./images/troy.jpg" height="325">
+					<p>2008</p>
+					<aside class="notes">And what she put into Koha was my work. All of you probably know how much work goes into a migration so I won't talk about those details of what was done, but it was a lot of work.</aside>
+				</section>
+
+				<section id="">
+					<h2>Coming soon - obligatory slide with an unnumbered list on it</h2>
+					<ul>
+					</ul>
+					<aside class="notes">Now, there are three reasons I'm talking about luck here.</aside>
+				</section>
+
+				<section id="">
+					<h2>Obligatory slide with an unnumbered list on it</h2>
+					<ul>
+						<li>Dumb luck talked me into doing the keynote</li>
+					</ul>
+					<aside class="notes">One of them is that - well, the reason I'm doing the "Keynote" is that in our Kohathon planning meetings, I said that if there were any blank spots on the schedule, or if anyone cancelled, I'd fill in for them.</aside>
+				</section>
+
+				<section id="">
+					<h2>Obligatory slide with an unnumbered list on it</h2>
+					<ul>
+						<li>Dumb luck talked me into doing the keynote</li>
+					</ul>
+					<p>This is why the alternate title for this presentation is "George talks about something weird."</p>
+					<aside class="notes">I said, if we have any empty slots, just write "George talks about something weird" and then I'll figure out what to say the night before.</aside>
+				</section>
+
+				<section id="">
+					<h2>koha-US 2019 Officers</h2>
+					<img src="./images/kohaus2019a.jpg" height="325">
+					<p>Several of these people were on the Kohathon Committee.</p>
+					<aside class="notes">I agreed to fill in for one slot later tonight where we didn't have anyone to talk and then the only person who cancelled, happened to be in this slot. So I agreed to fill it and everyone said "Thanks, George" and I felt like I had done something nice.</aside>
+				</section>
+
+				<section id="">
+					<h2>koha-US 2019 Officers</h2>
+					<img src="./images/kohaus2019.jpg" height="325">
+					<p>I don't have pictures of everyone who laughed, but these are two of them.</p>
+					<aside class="notes">Then about a week later at another meeting we were talking about the Kohathon schedule and someone asked a question about the Keynote speaker and a couple of people said "George is doing the keynote." and I said "I'm doing the keynote?"  And everone laughed and said, "Yes, that's the person who couldn't attend and you said you'd fill in for them."  And then there was a lot of swearing.</aside>
+				</section>
+
+				<section id="">
+					<h2>Obligatory slide with an unnumbered list on it</h2>
+					<ul>
+						<li>Dumb luck talked me into doing the keynote</li>
+					</ul>
+					<p>Volunteering is a bad idea.</p>
+					<aside class="notes">So I'm doing the keynote today because, out of all the people I could have filled in for, the only one that was unlucky enough to have to cancel was the keynote speaker. So luck played a part in my being here today.</aside>
+				</section>
+
+				<section id="">
+					<h2>Coworkers were no help</h2>
+					<img src="./images/slack.jpg" height="325">
+					<p></p>
+					<aside class="notes">The second reason I thought I'd talk about luck is that when I told my coworkers that I was doing the keynote and that I had absolutely no idea what I was going to talk about they all said "Good luck with that."</aside>
+				</section>
+
+				<section id="">
+					<h2></h2>
+					<h2>Obligatory slide with an unnumbered list on it</h2>
+					<ul>
+						<li>Dumb luck talked me into doing the keynote</li>
+						<li>Everyone said "Good luck"</li>
+					</ul>
+					<aside class="notes">I figured, then, if everyone is going to say "Good luck," even if they were saying it ironically, maybe I should actually talk about luck.</aside>
+				</section>
+
+				<section id="">
+					<h2>Obligatory slide with an unnumbered list on it</h2>
+					<ul>
+						<li>Dumb luck talked me into doing the keynote</li>
+						<li>Everyone said "Good luck"</li>
+						<li>Staff often feel like luck is all they have</li>
+					</ul>
+					<p></p>
+					<aside class="notes">The third reason is that I've worked with a lot of staff at a lot of libraries and staff often feel like the only factor that plays a part in the ILS they're using is luck.  A lot of staff feel like they have no control over the features in their ILS because they're often not the people who make decisions about the ILS.</aside>
+				</section>
+
+				<section id="">
+					<h2>Library!</h2>
+					<img src="./images/bpl.jpg" height="325">
+					<p>I worked for Boise Public Library from 1997-2002.</p>
+					<aside class="notes">I know I felt that way when I was using the last proprietary ILS I was on.  We could talk to support staff at that company that produced that softare and say "What if the system did ___" but no one ever listened to us.</aside>
+				</section>
+
+				<section id="">
+					<h2>Bookmobile</h2>
+					<img src="./images/bkm2001.jpg" height="325">
+					<p>I was the Bookmoble Driver at Boise Public.</p>
+					<aside class="notes">Well, except for one time.  At one meeting in 2008.  The only time I ever met someone from the company, I said "Wouldn't it be great if you could change the pickup location for a request - AFTER the request had been placed."</aside>
+				</section>
+
+				<section id="">
+					<h2>A Reasonable Request</h2>
+					<img src="./images/rays.jpg" height="325">
+					<p>Ray's had a sign like this in the window when I was a kid in Idaho Falls.</p>
+					<aside class="notes">That seemed like a reasonable request. and about 3 years later they told us that they'd added the feature I had asked for to the software.  So, after the next upgrade we had, we tried it out and it didn't work right.  We still couldn't change the pickup location on an item after a request had been placed.  It was just stupid.</aside>
+				</section>
+
+				<section id="">
+					<h2>Neil Young</h2>
+					<img src="./images/helpless.jpg" height="325">
+					<p></p>
+					<aside class="notes">I felt helpless.  The ILS we had was beyond my control.  I had no input in how it worked and we were paying too much money for it and we weren't happy.</aside>
+				</section>
+
+				<section id="">
+					<h2>Koha</h2>
+					<img src="./images/0020.png" height="325">
+					<p>I saw the light!</p>
+					<aside class="notes">But that's the great thing about Koha.  Anyone that wants to have input can have input.  And this is where anyone at any level can help because the Koha community wants to know what you want Koha to do.</aside>
+				</section>
+
+				<section id="">
+					<h2>Make your own luck in 3 steps</h2>
+					<ol>
+						<li class="fragment fade-ino">Listen</li>
+					</ol>
+					<p>Oh no.  Another list.</p>
+					<aside class="notes">The first thing is really simple.  Listen.</aside>
+				</section>
+
+				<section id="">
+					<h2>Listen by e-mail</h2>
+					<img src="./images/mrzip.jpg" height="325">
+					<p><a href="https://koha-community.org/support/koha-mailing-lists/" target="_blank">Koha community mailing lists</a></p>
+					<aside class="notes">Any staff member from any library can join the Koha mailing list and read those emails.  Getting involved in the Koha community is as simple as that.</aside>
+				</section>
+
+				<section id="">
+					<h2>Listen to a meeting</h2>
+					<img src="./images/koha-us.square.jpg" height="325">
+					<p><a href="http://koha-us.org/collaborate/" target="_blank">koha-US Collaborate page</a></p>
+					<aside class="notes">You can also come to meetings.  koha-US has a monthly meeting on Zoom that anyone can attend.  You don't have to be a member, you don't have to speak, you don't even have to turn on your video.  All you have to do is show up and listen.</aside>
+				</section>
+
+				<section id="">
+					<h2>Listen to Bugzilla</h2>
+					<img src="./images/bugzilla.png" height="325">
+					<p><a href="https://bugs.koha-community.org/bugzilla3/" target="_blank">Click here to go to Bugzilla</a></p>
+					<aside class="notes">You can also go to Bugzilla and read the bugs that people are filing and commenting on to see what kind of crazy ideas the developers are up to.</aside>
+				</section>
+
+				<section id="">
+					<h2>koha-US + Bugzilla</h2>
+					<table>
+						<tr>
+							<td>
+								<img src="./images/koha-us.square.jpg" height="325">
+							</td>
+							<td>
+								<img src="./images/bugzilla.png" height="325">
+							</td>
+						</tr>
+					</table>
+					<p><a href="http://koha-us.org/bugs/" target="_blank">Click here to go to the koha-US Bugzilla feed</a></p>
+					<aside class="notes">And if you go to a koha-US meeting, we often talk about bugs at the end of the meeting and you can track all of the bugs we talk about on the koha-US website at koha-us.org/bugs </aside>
+				</section>
+
+				<section id="">
+					<h2>Don't be like Mrs. Richards</h2>
+					<img src="./images/mrsrichards.jpg" height="325">
+					<p>She keeps her hearing aid off to save the batteries.</p>
+					<aside class="notes">If you're shy, if you're nervous, if you're afraid that you'll ask a stupid question, don't worry about that, because all you're doing right now is listening.  Listening is not taxing work.  Most of the work involved in listening is taking the time to actually do it.</aside>
+				</section>
+
+				<section id="">
+					<h2>Make your own luck in 3 steps</h2>
+					<ol>
+						<li>Listen</li>
+						<li class="fragment fade-ino">Ask questions</li>
+					</ol>
+					<p>Here's that list again.</p>
+					<aside class="notes">The next thing is to ask questions.</aside>
+				</section>
+
+				<section id="">
+					<h2>Be like Arnold</h2>
+					<img src="./images/horshack.jpg" height="325">
+					<p></p>
+					<aside class="notes">After you've listened to what's going on for a while, eventually, hopefully, you're going to have questions.  So once you're comfortable, why not ask a question.</aside>
+				</section>
+
+				<section id="">
+					<h2>Good question</h2>
+					<img src="./images/damaged.jpg" height="325">
+					<p>Yeah, why doesn't Koha display a message at check-in for a damaged item.</p>
+					<aside class="notes">Maybe you work at the circulation desk and you've always wondered why Koha doesn't deliver an alert when you check in an item with a damaged status.</aside>
+				</section>
+
+				<section id="">
+					<h2>Twin Peaks</h2>
+					<img src="./images/wth.jpg" height="325">
+					<p>What the hell is going on?</p>
+					<aside class="notes">After you've listened for a while and you feel comfortable with everyone you're listening to.  Why not ask that question?</aside>
+				</section>
+
+				<section id="">
+					<h2>Seriously?</h2>
+					<img src="./images/stupidquestion.jpg" height="325">
+					<p>No one in the Koha community will send you a bill for asking a stupid question.</p>
+					<aside class="notes">Nobody is going to think any less of you for it.</aside>
+				</section>
+
+				<section id="">
+					<h2>Make your own luck in 3 steps</h2>
+					<ol>
+						<li>Listen</li>
+						<li>Ask questions</li>
+						<li class="fragment fade-ino">Make suggestions</li>
+					</ol>
+					<p>This is not the last time you'll see this list.</p>
+					<aside class="notes">Finally, after you've asked some questions, maybe you'll want to make a suggestion.</aside>
+				</section>
+
+				<section id="">
+					<h2>Make your own luck in 3 steps</h2>
+					<ol>
+						<li>Listen</li>
+						<li>Ask questions</li>
+						<li>Make suggestions</li>
+					</ol>
+					<p>This is not the last time you'll see this list.</p>
+					<aside class="notes">Maybe the qeustion, "Why doesn't Koha display an alert when you check in an item with a damaged status" can become "I'd like someone write an enhancement to Koha so that when you check in an item with a damged status an alert pops up."</aside>
+				</section>
+
+				<section id="">
+					<h2>Tom Petty was wrong</h2>
+					<img src="./images/waiting.png" height="325">
+					<p></p>
+					<aside class="notes">The hardest part for most front line staff of becoming active in the Koha community is that you actually have to do some work to be a part of it.  But it's all fairly easy work.</aside>
+				</section>
+
+				<section id="">
+					<h2>An Example of My Workflow</h2>
+					<img src="./images/wf010.jpg" height="325">
+					<p>Go to Bugzilla</p>
+					<aside class="notes">So here's a quick example of what I do once or twice a week.  I go to Bugzilla and click on the "Bugs reported in the last 7 days" or "Bugs changed in the last 7 days" link.</aside>
+				</section>
+
+				<section id="">
+					<h2>List of bugs</h2>
+					<img src="./images/wf020.jpg" height="325">
+					<p>This is where the action is</p>
+					<aside class="notes">This gets me a list of what's going on.  These are new bugs, bugs that have had patches written for them, bugs that need signoff, bugs that just passed QA, etc.  This is where the action is.  So I browse through the list of bugs.  And if I see any that look important to me,</aside>
+				</section>
+
+				<section id="">
+					<h2>Read them</h2>
+					<img src="./images/wf030.jpg" height="325">
+					<p></p>
+					<aside class="notes">I read them.<br />It's as simple as that.  I try to take some time every week to read through a list of bugs on Bugzilla and I try to read the ones that I think might impact me.</aside>
+				</section>
+
+				<section id="">
+					<h2>Sign off</h2>
+					<img src="./images/wf040.png" height="325">
+					<p>Yeah, I'm not going to talk about that today.</p>
+					<aside class="notes">Sure, sometimes I sign off on them, but I'm not going to go into signing off on a patch in this presentation.  That's for another program.  But just going through and reading the bugs and the comments helps me know what's going on in Koha this week.</aside>
+				</section>
+
+				<section id="">
+					<h2>A Really Simple Example</h2>
+					<img src="./images/qf010.jpg" height="325">
+					<p></p>
+					<aside class="notes">Last July I was doing reading through the recent bugs and I came across bug 23389.  The title was "Add 'All' option to report value dropdowns." And I thought, hey, I have a work-around for that that I've been using for years.  This is cool.</aside>
+				</section>
+
+				<section id="">
+					<h2>Nick wrote a patch</h2>
+					<img src="./images/qf020.jpg" height="325">
+					<p></p>
+					<aside class="notes">I read the comments and the test plan and I immediately thought - woah - this is not what I want.  I have reports in my system with drop-downs that, if I ran them with an "All" option, they'd time out.</aside>
+				</section>
+
+				<section id="">
+					<h2>I commented</h2>
+					<img src="./images/qf030.jpg" height="325">
+					<p></p>
+					<aside class="notes">So, I made a comment.  I like the idea, but can you make it optional because I don't want it on all of my reports.</aside>
+				</section>
+
+				<section id="">
+					<h2>Nick changed the patch and addressed my comments</h2>
+					<img src="./images/qf040.jpg" height="325">
+					<p></p>
+					<aside class="notes">And a day later Nick added a new patch that had did the same thing, but  "All" was optional.</aside>
+				</section>
+
+				<section id="">
+					<h2>Discussions are Good</h2>
+					<img src="./images/discussion.jpg" height="325">
+					<p></p>
+					<aside class="notes">Having these kinds of discussions is what the developers want.  The developers want to make Koha work better.  But they can't do that without feedback from us.</aside>
+				</section>
+
+				<section id="">
+					<h2>Make your own luck in 3 steps</h2>
+					<ol>
+						<li class="fragment fade-in-then-semi-out">Listen</li>
+						<li class="fragment fade-in-then-semi-out">Ask questions</li>
+						<li class="fragment fade-in-then-semi-out">Make suggestions</li>
+					</ol>
+					<p>Ok.  This is the last time you'll see this list.</p>
+					<aside class="notes">And the easiest steps you can take in order to give feedback to the developers are Listen to what's going on, to ask questions, and to make suggestions.</aside>
+				</section>
+
+				<section id="">
+					<h2>Have a Happy Day</h2>
+					<img src="./images/cookies.jpg" height="325">
+					<p></p>
+					<aside class="notes">If everyone that uses Koha takes these simple setps, then the future of Koha is going to be just fine.</aside>
+				</section>
+
+				<section id="slide-me">
+					<h2>George Williams</h2><br />
+					<h3>Next Search Catalog Coordinator<br />Northeast Kansas Library System <a href="https://www.nekls.org" target="">www.nekls.org</a></h3><br />
+					<h3>koha-US Past President (2019) <a href="https://www.koha-us.org" target="_blank">www.koha-us.org</a></h3>
+					<h3>These slides available at <a href="http://kohathon2020.hopperdietzel.org/keynote/" target="_blank">kohathon2020.hopperdietzel.org/keynote</a></h3>
+					<aside class="notes">Speaker notes</aside>
+				</section>
+
 			</div>
 		</div>
-		<script src="js/reveal.js"></script>
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [{
-					src: 'plugin/markdown/marked.js'
-				}, {
-					src: 'plugin/markdown/markdown.js'
-				}, {
-					src: 'plugin/notes/notes.js',
-					async: true
-				}, {
-					src: 'plugin/highlight/highlight.js',
-					async: true
-				}]
-			});
-		</script>
-	</body>
+		<div>
+			<span class="nextlogo">
+				<image class="logo" src="images/0020.png" width="250" style="padding: 25px 25px 25px 25px; position: absolute; bottom: 0; left: 0;">
+			</span>
+		</div>
+	</div>
+	<script src="js/reveal.js"></script>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [{
+				src: 'plugin/markdown/marked.js'
+			}, {
+				src: 'plugin/markdown/markdown.js'
+			}, {
+				src: 'plugin/notes/notes.js',
+				async: true
+			}, {
+				src: 'plugin/highlight/highlight.js',
+				async: true
+			}]
+		});
+	</script>
+</body>
 
 </html>
