@@ -1,94 +1,318 @@
 <!doctype html>
 <html>
 
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<title>Koha Open Source ILS</title>
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/sky.css">
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement('link');
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName('head')[0].appendChild(link);
-		</script>
-		<style>
-			h1, h2, h3, h4, h5 {text-transform: none !important;}
-			p  {font-size: 110%;}
-			.img-container {float: left; width: 50%; padding: 5px;}
-		</style>
-	</head>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Koha Self Registration</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/sky.css">
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+	<style>
+		h1,
+		h2,
+		h3,
+		h4,
+		h5 {
+			text-transform: none !important;
+		}
 
-	<body>
-		<div class="reveal">
-			<div class="topbar">
-				<span class="nextlogo">
-					<image class="logo" src="images/0010.png" width="250" style="padding: 25px 25px 25px 25px; position: absolute; top: 0; right: 0;">
-				</span>
-				<div class="slides">
+		p {
+			font-size: 110%;
+		}
 
-					<section id="slide">
-						<h2>Heading 2</h2>
-						<p>Paragraph</p>
-						<h3>Heading 3</h3>
-						<aside class="notes">Speaker notes</aside>
-					</section>
+		.img-container {
+			float: left;
+			width: 50%;
+			padding: 5px;
+		}
+	</style>
+</head>
 
-					<section id="slide-success">
-						<h2>Heading 2</h2>
-						<h3 class="fragment" data-fragment-index="1">First</h3>
-						<h3 class="fragment" data-fragment-index="2">Second</h3>
-						<h3 class="fragment" data-fragment-index="3">Third</h3>
-						<h3 class="fragment" data-fragment-index="4">Fourth</h3>
-						<h3 class="fragment" data-fragment-index="5">Fith</h3>
-						<aside class="notes">Speaker notes</aside>
-					</section>
+<body>
+	<div class="reveal">
+		<div class="topbar">
+			<span class="nextlogo">
+				<image class="logo" src="images/0010.png" width="250" style="padding: 25px 25px 25px 25px; position: absolute; top: 0; right: 0;">
+			</span>
+			<div class="slides">
 
-					<section id="slide-kohatime1">
-						<h2>Heading 2</h2>
+				<section id="title">
+					<h2>Quick Setup Guide for Self-Registration</h2>
+					<p>George Williams</p>
+					<aside class="notes">Title Slide</aside>
+				</section>
+
+				<section id="slide-me">
+					<h2>George Williams</h2><br />
+					<h3>Next Search Catalog Coordinator<br />Northeast Kansas Library System <a href="https://www.nekls.org" target="">www.nekls.org</a></h3><br />
+					<h3>koha-US Past President (2019) <a href="https://www.koha-us.org" target="_blank">www.koha-us.org</a></h3>
+					<h3>These slides available at <a href="http://kohathon2020.hopperdietzel.org/selfreg/" target="_blank">kohathon2020.hopperdietzel.org/selfreg</a></h3>
+					<aside class="notes">Hello again, I'm George Williams</aside>
+				</section>
+
+				<section id="usa">
+					<h2>USA</h2>
+					<img src="./images/usa.jpg" alt="USA" height="325">
+					<p>Kansas is in the middle.</p>
+					<aside class="notes">I am the Next Search Catalog Coordinator at Northeast Kansas Library System</aside>
+				</section>
+
+				<section id="kansas">
+					<h2>51 Libraries in north east Kansas</h2>
+					<img src="./images/kansas030.jpg" alt="Kansas" height="325">
+					<p>51 Libraries in the highlighted area.</p>
+					<aside class="notes">in Lawrence, KS.</aside>
+				</section>
+
+				<section id="koha">
+					<h2>Community Koha since 2011</h2>
+					<img src="./images/Kohakoru.png" alt="Koru" height="325">
+					<p>(Liblime from 2008-2011)</p>
+					<aside class="notes">We've been using Koha since 2008 and we've been on Community Koha hosted by Bywater Solutions since 2011.</aside>
+				</section>
+
+				<!-- The problem. -->
+
+				<section id="">
+					<h2>Coronavirus</h2>
+					<img src="./images/corona.jpg" height="325">
+					<p>Like many, we were unprepared.</p>
+					<aside class="notes">And now I'm going to talk about patron self-registration and how we set this up in just a few days less than a month ago.</aside>
+				</section>
+
+				<section id="">
+					<h2>All Libraries Closed</h2>
+					<img src="./images/governor.jpg" height="325">
+					<p>Kansas Governor Laura Kelly.  Statewide stay-at-home order in effect till at least May 3.</p>
+					<aside class="notes">Like most of you, all of our libraries are closed.</aside>
+				</section>
+
+				<section id="">
+					<h2>Self-Registration Not On</h2>
+					<img src="./images/0010.png" height="325">
+					<p>Nobody could get a library card.</p>
+					<aside class="notes">And one of the issues we had going into this was that we did not have self-registration turned on in our system.  So around March 20, I dove in and with little preperation, I set about turning on patron self-registration in Koha.</aside>
+				</section>
+
+				<!-- The solution. -->
+
+				<section id="">
+					<h2>ByWater Cheat Sheet</h2>
+					<p><a href="https://bywatersolutions.com/education/how-to-set-up-an-online-resources-only-self-registration" target="_blank">How to set up an online resources only self registration</a></p>
+					<p>5 step plan for setting up Self-Registration</p>
+					<aside class="notes">It seemed pretty easy and ByWater Solutions actually has a handy cheat sheet for turning this feature on that Donna wrote almost two years ago.  So I read that over and I broke it down into a checklist of 4 things I needed to do.</aside>
+				</section>
+
+				<section id="horizontal1">
+					<section id="">
+						<h2>Checklist</h2>
 						<ul>
-							<li class="fragment fade-in-then-semi-out">First</li>
-							<li class="fragment fade-in-then-semi-out">Second</li>
-							<li class="fragment fade-in-then-semi-out">Third</li>
-							<li class="fragment fade-in-then-semi-out">Fourth</li>
-							<li class="fragment fade-in-then-semi-out">Fifth</li>
+							<li class="fragment fade-in">Create new patron category</li>
+							<li class="fragment fade-in">autoMemberNum turned on</li>
+							<li class="fragment fade-in">7 preferences for Self Registration</li>
+							<li class="fragment fade-in">Create reports to identify self-registrations</li>
 						</ul>
-						<aside class="notes">Speaker notes</aside>
+						<aside class="notes">--Read from the slide--</aside>
 					</section>
 
-				</div>
-			</div>
-			<div>
-				<span class="nextlogo">
-					<image class="logo" src="images/0020.png" width="250" style="padding: 25px 25px 25px 25px; position: absolute; bottom: 0; left: 0;">
-				</span>
+					<section id="">
+						<h2>Create new patron category</h2>
+						<ul>
+							<li>Code: A_SELF | Name: Self registered</li>
+							<li class="fragment fade-in">Expires after 90 days</li>
+							<li class="fragment fade-in">Age required - any</li>
+							<li class="fragment fade-in">Everything else matches all other categories we have</li>
+						</ul>
+						<aside class="notes">New patron category - that's easy.</aside>
+					</section>
+
+						<section id="">
+							<h2>autoMemberNum Turned On</h2>
+							<ul>
+								<li>Changed the setting to "Do" use autoMemberNum</li>
+								<li class="fragment fade-in">We did set BorrowerMandatoryField to include cardnumber<br />This disables the autoMemberNum in the staff client</li>
+								<li class="fragment fade-in">I used jQuery to kill the warning that pops up in the staff client<br/>$('#pat_memberentrygen span:contains("AutoMemberNum is set to enabled")').hide();</li>
+							</ul>
+							<aside class="notes">This was an easy switch to flip - but we can't use it in the staff client.  --READ FROM SLIDES--</aside>
+						</section>
+
+						<section id="">
+							<h2>11 Self Registration Preferences</h2>
+							<ol>
+								<li>PatronSelfModificationBorrowerUnwantedField<br />For patron modification - not necessary for self-registration</li>
+								<li class="fragment fade-in">PatronSelfRegistration</li>
+								<li class="fragment fade-in">PatronSelfRegistrationAdditionalInstructions</li>
+								<li class="fragment fade-in">PatronSelfRegistrationBorrowerMandatoryField </li>
+								<li class="fragment fade-in">PatronSelfRegistrationBorrowerUnwantedField </li>
+								<li class="fragment fade-in">PatronSelfRegistrationDefaultCategory</li>
+							</ol>
+							<aside class="notes"></aside>
+						</section>
+
+						<section id="">
+							<h2>11 Self Registration Preferences</h2>
+							<ol start="7">
+								<li>PatronSelfRegistrationEmailMustBeUnique</li>
+								<li class="fragment fade-in">PatronSelfRegistrationExpireTemporaryAccountsDelay<br />Also asked ByWater to turn on the misc/cronjobs/cleanup_database.pl</li>
+								<li class="fragment fade-in">PatronSelfRegistrationLibraryList<br />Wrote some corresponding jQuery</li>
+								<li class="fragment fade-in">PatronSelfRegistrationPrefillForm</li>
+								<li class="fragment fade-in">PatronSelfRegistrationVerifyByEmail</li>
+							</ol>
+							<aside class="notes"></aside>
+						</section>
+
+						<section id="">
+							<h2>Customize Verification Email</h2>
+							<ul>
+								<li>OPAC_REG_VERIFY</li>
+								<li class="fragment fade-in">Added some instructions</li>
+								<li class="fragment fade-in">Added our centralized help e-mail</li>
+								<li class="fragment fade-in">Fixed a typo in the verification URL</li>
+							</ul>
+							<aside class="notes"></aside>
+						</section>
+
+						<section id="">
+							<h2>Create Report</h2>
+								<pre>SELECT
+  Concat('&lt;a href="/cgi-bin/koha/circ/circulation.pl?borrowernumber=',
+	borrowers.borrowernumber,
+	'" target="_blank">Link&lt;/a>'
+	) AS DIRECT_LINK,
+  borrowers.cardnumber,
+  borrowers.branchcode,
+  Concat(Coalesce(borrowers.surname, ''), ', ', Coalesce(borrowers.firstname, '')) AS NAME,
+  borrowers.dateofbirth,
+  Concat_Ws("&lt;br />",
+    Coalesce(borrowers.address, ''),
+    Coalesce(borrowers.address2, ''),
+    Concat(Coalesce(borrowers.city, ''), ', ', Coalesce(borrowers.state, ''), ' ', Coalesce(borrowers.zipcode, ''))
+  ) AS ADDRESS,
+  borrowers.email,
+  borrowers.phone,
+  borrowers.categorycode,
+  borrowers.dateenrolled
+FROM
+  borrowers
+WHERE
+  borrowers.categorycode = 'A_SELF'
+ORDER BY
+  borrowers.cardnumber DESC</pre>
+							<aside class="notes"></aside>
+						</section>
+
+					</section>
+
+				</section>
+
+				<!-- The problem. part II -->
+
+				<section id="">
+				  <h2>Demo for Libraries on Zoom</h2>
+					<p>I hid the URL in the OPAC with jQuery</p>
+				  <p>Lots of good questions</p>
+					<p>People at the demo tested the process with a link I sent them</p>
+				  <aside class="notes"></aside>
+				</section>
+
+				<section id="">
+					<h2>Followup From Member Library</h2>
+					<p>Policy implications at one library.</p>
+					<p>Concern over the cost of electronic resources also.</p>
+					<aside class="notes"></aside>
+				</section>
+
+				<!-- The solution. Part II -->
+
+				<section id="">
+					<h2>Changes</h2>
+					<ul>
+						<li class="fragment fade-in">PatronSelfRegistrationLibraryList only has an option of NEKLS</li>
+						<li class="fragment fade-in">Make all A_SELF accounts expire on July 31, 2020</li>
+						<li class="fragment fade-in">PatronSelfRegistrationAdditionalInstructions was changed to remind the patron that NEKLS is their home library</li>
+						<li class="fragment fade-in">OPAC_REG_VERIFY updated to remind them that NEKLS is their home library</li>
+					</ul>
+					<aside class="notes">Back to the drawing board.</aside>
+				</section>
+
+				<!-- Mistakes -->
+
+				<section id="">
+					<h2>Mistakes Were made</h2>
+						<p>PatronSelfRegistrationExpireTemporaryAccountsDelay</p>
+						<p>Since PatronSelfRegistrationExpireTemporaryAccountsDelay says it will remove patrons who have not verified their account after XX number of days, and we had patrons set to self-verify, we turned on this feature.</p>
+						<p>The problem is that PatronSelfRegistrationExpireTemporaryAccountsDelay deltes all of the patrons in the self-registration category after XX days.</p>
+						<p>Andrew at ByWater has submitted a patch to make the operation of this system preference more clear and has also submitted a patch to modify the Koha documentation.</p>
+					<aside class="notes">Speaker notes</aside>
+				</section>
+
+				<section id="">
+					<h2>How's it working</h2>
+						<ul>
+							<li>60-70 new accounts</li>
+							<li>20% are duplicates</li>
+							<li>Not all of them sign up for Hoopla</li>
+							<li>After they register they want to know about Overdrive - which we don't subscribe to</li>
+						</ul>
+					<aside class="notes">Speaker notes</aside>
+				</section>
+
+				<section id="">
+					<h2>Going Forward</h2>
+					<ul>
+						<li>Turn off autoMemberNum</li>
+						<li class="fragment fade-in">Make patrons choose their own library</li>
+						<li class="fragment fade-in">Make cards expire after 14 days (patrons must go to the library to complete the sign-up in order to get a card they can use)</li>
+					</ul>
+					<aside class="notes">Speaker notes</aside>
+				</section>
+
+				<section id="slide-me">
+					<h2>George Williams</h2><br />
+					<h3>Next Search Catalog Coordinator<br />Northeast Kansas Library System <a href="https://www.nekls.org" target="">www.nekls.org</a></h3><br />
+					<h3>koha-US Past President (2019) <a href="https://www.koha-us.org" target="_blank">www.koha-us.org</a></h3>
+					<h3>These slides available at <a href="http://kohathon2020.hopperdietzel.org/selfreg/" target="_blank">kohathon2020.hopperdietzel.org/selfreg</a></h3>
+					<aside class="notes">Speaker notes</aside>
+				</section>
+
 			</div>
 		</div>
-		<script src="js/reveal.js"></script>
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [{
-					src: 'plugin/markdown/marked.js'
-				}, {
-					src: 'plugin/markdown/markdown.js'
-				}, {
-					src: 'plugin/notes/notes.js',
-					async: true
-				}, {
-					src: 'plugin/highlight/highlight.js',
-					async: true
-				}]
-			});
-		</script>
-	</body>
+		<div>
+			<span class="nextlogo">
+				<image class="logo" src="images/0020.png" width="250" style="padding: 25px 25px 25px 25px; position: absolute; bottom: 0; left: 0;">
+			</span>
+		</div>
+	</div>
+	<script src="js/reveal.js"></script>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [{
+				src: 'plugin/markdown/marked.js'
+			}, {
+				src: 'plugin/markdown/markdown.js'
+			}, {
+				src: 'plugin/notes/notes.js',
+				async: true
+			}, {
+				src: 'plugin/highlight/highlight.js',
+				async: true
+			}]
+		});
+	</script>
+</body>
 
 </html>
