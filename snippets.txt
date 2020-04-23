@@ -1,0 +1,25 @@
+Grab and go
+
+<section id="list">
+  <h2></h2>
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  <aside class="notes">Speaker notes</aside>
+</section>
+
+<section id="">
+  <h2>Links</h2>
+  <p><a href="" target="_blank"></a></p>
+  <aside class="notes">Speaker notes</aside>
+</section>
+
+<section id="Picture">
+  <h2></h2>
+  <img src="./images/kansas030.jpg" height="325">
+  <p></p>
+  <aside class="notes">Speaker notes</aside>
+</section>

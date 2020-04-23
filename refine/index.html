@@ -1,119 +1,185 @@
 <!doctype html>
 <html>
 
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<title>Koha Open Source ILS</title>
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/sky.css">
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement('link');
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName('head')[0].appendChild(link);
-		</script>
-		<style>
-			h1, h2, h3, h4, h5 {text-transform: none !important;}
-			p  {font-size: 110%;}
-			.img-container {float: left; width: 50%; padding: 5px;}
-		</style>
-	</head>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Using Open Refine</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/sky.css">
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+	<style>
+		h1,
+		h2,
+		h3,
+		h4,
+		h5 {
+			text-transform: none !important;
+		}
 
-	<body>
-		<div class="reveal">
-			<div class="topbar">
-				<span class="nextlogo">
-					<image class="logo" src="images/0010.png" width="250" style="padding: 25px 25px 25px 25px; position: absolute; top: 0; right: 0;">
-				</span>
-				<div class="slides">
+		p {
+			font-size: 110%;
+		}
 
-					<section id="title">
-						<h2>Quick Setup Guide for Self-Registration</h2>
-						<p>George Williams</p>
-						<aside class="notes">Title Slide</aside>
-					</section>
+		.img-container {
+			float: left;
+			width: 50%;
+			padding: 5px;
+		}
+	</style>
+</head>
 
-					<section id="slide-me">
-						<h2>George Williams</h2><br />
-						<h3>Next Search Catalog Coordinator<br />Northeast Kansas Library System <a href="https://www.nekls.org" target="">www.nekls.org</a></h3><br />
-						<h3>koha-US Past President (2019) <a href="https://www.koha-us.org" target="_blank">www.koha-us.org</a></h3>
-						<h3>These slides available at <a href="http://kohathon2020.hopperdietzel.org/refine/" target="_blank">kohathon2020.hopperdietzel.org/refine</a></h3>
-						<aside class="notes">Hello again, I'm George Williams</aside>
-					</section>
+<body>
+	<div class="reveal">
+		<div class="topbar">
+			<span class="nextlogo">
+				<image class="logo" src="images/0010.png" width="250" style="padding: 25px 25px 25px 25px; position: absolute; top: 0; right: 0;">
+			</span>
+			<div class="slides">
 
-					<section id="usa">
-						<h2>USA</h2>
-						<img src="./images/usa.jpg" alt="USA" height="325">
-						<p>Kansas is in the middle.</p>
-						<aside class="notes">I am the Next Search Catalog Coordinator at Northeast Kansas Library System</aside>
-					</section>
+				<section id="title">
+					<h2>Using Open Refine to clean up address data</h2>
+					<p>George Williams</p>
+					<aside class="notes">Title Slide</aside>
+				</section>
 
-					<section id="kansas">
-						<h2>51 Libraries in north east Kansas</h2>
-						<img src="./images/kansas030.jpg" alt="Kansas" height="325">
-						<p>51 Libraries in the highlighted area.</p>
-						<aside class="notes">in Lawrence, KS.</aside>
-					</section>
+				<section id="slide-me">
+					<h2>George Williams</h2><br />
+					<h3>Next Search Catalog Coordinator<br />Northeast Kansas Library System <a href="https://www.nekls.org" target="">www.nekls.org</a></h3><br />
+					<h3>koha-US Past President (2019) <a href="https://www.koha-us.org" target="_blank">www.koha-us.org</a></h3>
+					<h3>These slides available at <a href="http://kohathon2020.hopperdietzel.org/refine/" target="_blank">kohathon2020.hopperdietzel.org/refine</a></h3>
+					<aside class="notes">Hello again, I'm George Williams</aside>
+				</section>
 
-					<section id="koha">
-						<h2>Community Koha since 2011</h2>
-						<img src="./images/Kohakoru.png" alt="Koru" height="325">
-						<p>(Liblime from 2008-2011)</p>
-						<aside class="notes">We've been using Koha since 2008 and we've been on Community Koha hosted by Bywater Solutions since 2011.</aside>
-					</section>
+				<section id="usa">
+					<h2>USA</h2>
+					<img src="./images/usa.jpg" alt="USA" height="325">
+					<p>Kansas is in the middle.</p>
+					<aside class="notes">I am the Next Search Catalog Coordinator at Northeast Kansas Library System</aside>
+				</section>
 
+				<section id="kansas">
+					<h2>51 Libraries in north east Kansas</h2>
+					<img src="./images/kansas030.jpg" alt="Kansas" height="325">
+					<p>51 Libraries in the highlighted area.</p>
+					<aside class="notes">in Lawrence, KS.</aside>
+				</section>
 
-					Download Open refine
+				<section id="koha">
+					<h2>Community Koha since 2011</h2>
+					<img src="./images/Kohakoru.png" alt="Koru" height="325">
+					<p>(Liblime from 2008-2011)</p>
+					<aside class="notes">We've been using Koha since 2008 and we've been on Community Koha hosted by Bywater Solutions since 2011.</aside>
+				</section>
 
-					Create a report - the report needs the columns necessary to use the patron import tool
+				<section id="">
+					<h2>Open Refine</h2>
+					<ul>
+						<li class="fragment fade-in">Cleaning up messy data</li>
+						<li class="fragment fade-in">Find it at <a href="https://openrefine.org/" target="_blank">openrefine.org</a></li>
+						<li class="fragment fade-in">openrefine.org contains several introductory videos</li>
+						<li class="fragment fade-in">It's like Excel on steroids</li>
+					</ul>
+					<aside class="notes">First question - what is Open Refine? Used to be called Google Refine. A great tool for transforming data.</aside>
+				</section>
 
-					Download the data
+				<section id="">
+					<h2>What I've been using it for</h2>
+					<img src="./images/policymap.jpg" height="325">
+					<aside class="notes">I've been using it for cleaning up data to put into Policy Map.</aside>
+				</section>
 
-					Refine the data
+				<section id="list">
+					<h2>My process</h2>
+					<ul>
+						<li class="fragment fade-in">Run a report in Koha</li>
+						<li class="fragment fade-in">Clean up data in Open Refine</li>
+						<li class="fragment fade-in">Import patron data back into Koha</li>
+						<li class="fragment fade-in">Run Policy Map report</li>
+						<li class="fragment fade-in">Import data into Policy Map</li>
+					</ul>
+					<aside class="notes"></aside>
+				</section>
 
-					Policy Map
+				<section id="">
+					<h2>Almost Live Demo</h2>
+					<img src="./images/0010.png" height="325">
+					<p>I'll share my screen and wow you with how much junk is on my desktop.</p>
+					<aside class="notes"></aside>
+				</section>
 
-					<section id="slide-me">
-						<h2>George Williams</h2><br />
-						<h3>Next Search Catalog Coordinator<br />Northeast Kansas Library System <a href="https://www.nekls.org" target="">www.nekls.org</a></h3><br />
-						<h3>koha-US Past President (2019) <a href="https://www.koha-us.org" target="_blank">www.koha-us.org</a></h3>
-						<h3>These slides available at <a href="http://kohathon2020.hopperdietzel.org/refine/" target="_blank">kohathon2020.hopperdietzel.org/refine</a></h3>
-						<aside class="notes"></aside>
-					</section>
+				<section id="">
+					<h2>Report</h2>
+					<pre>SELECT
+  borrowers.cardnumber,
+  borrowers.surname,
+  borrowers.firstname,
+  borrowers.address,
+  borrowers.address2,
+  borrowers.city,
+  borrowers.state,
+  borrowers.zipcode,
+  borrowers.country,
+  borrowers.branchcode,
+  borrowers.categorycode
+FROM
+  borrowers
+WHERE
+  borrowers.branchcode NOT LIKE "HIGH_CC" AND
+  borrowers.branchcode NOT LIKE "PH%" AND
+  borrowers.branchcode LIKE &lt;&lt;Choose your library|branches>> AND
+  borrowers.categorycode &lt;> "STAFF" AND
+  borrowers.cardnumber NOT LIKE "0%" AND
+  borrowers.cardnumber IS NOT NULL AND
+  borrowers.cardnumber NOT LIKE ""</pre>
+					<aside class="notes"></aside>
+				</section>
 
-				</div>
-			</div>
-			<div>
-				<span class="nextlogo">
-					<image class="logo" src="images/0020.png" width="250" style="padding: 25px 25px 25px 25px; position: absolute; bottom: 0; left: 0;">
-				</span>
+				<section id="slide-me">
+					<h2>George Williams</h2><br />
+					<h3>Next Search Catalog Coordinator<br />Northeast Kansas Library System <a href="https://www.nekls.org" target="">www.nekls.org</a></h3><br />
+					<h3>koha-US Past President (2019) <a href="https://www.koha-us.org" target="_blank">www.koha-us.org</a></h3>
+					<h3>These slides available at <a href="http://kohathon2020.hopperdietzel.org/refine/" target="_blank">kohathon2020.hopperdietzel.org/refine</a></h3>
+					<aside class="notes"></aside>
+				</section>
+
 			</div>
 		</div>
-		<script src="js/reveal.js"></script>
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [{
-					src: 'plugin/markdown/marked.js'
-				}, {
-					src: 'plugin/markdown/markdown.js'
-				}, {
-					src: 'plugin/notes/notes.js',
-					async: true
-				}, {
-					src: 'plugin/highlight/highlight.js',
-					async: true
-				}]
-			});
-		</script>
-	</body>
+		<div>
+			<span class="nextlogo">
+				<image class="logo" src="images/0020.png" width="250" style="padding: 25px 25px 25px 25px; position: absolute; bottom: 0; left: 0;">
+			</span>
+		</div>
+	</div>
+	<script src="js/reveal.js"></script>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [{
+				src: 'plugin/markdown/marked.js'
+			}, {
+				src: 'plugin/markdown/markdown.js'
+			}, {
+				src: 'plugin/notes/notes.js',
+				async: true
+			}, {
+				src: 'plugin/highlight/highlight.js',
+				async: true
+			}]
+		});
+	</script>
+</body>
 
 </html>
